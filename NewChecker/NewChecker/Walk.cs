@@ -241,7 +241,7 @@ namespace NewChecker
             else if (a[Rchoose][Cchoose] == "]X[")
             {
                 turn = 1;
-            Eathorse0: int[] e = new int[2];
+            EathorseO: int[] e = new int[2];
                 Console.Write("Hot GO :");
                 e = Input.ex(Console.ReadLine());
                 int Erow = e[0];
@@ -258,7 +258,7 @@ namespace NewChecker
                     Cchoose = Erow - 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
-                    goto Eathorse0;
+                    goto EathorseO;
                 }
                 else if (((Erow < Rchoose) && (Ecol > Cchoose)) && (a[Erow - 1][Ecol + 1] == "[ ]"))
                 {
@@ -270,7 +270,7 @@ namespace NewChecker
                     Cchoose = Erow + 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
-                    goto Eathorse0;
+                    goto EathorseO;
                 }
                 else if (((Erow > Rchoose) && (Ecol < Cchoose)) && (a[Erow + 1][Ecol - 1] == "[ ]"))
                 {
@@ -282,7 +282,7 @@ namespace NewChecker
                     Cchoose = Erow - 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
-                    goto Eathorse0;
+                    goto EathorseO;
                 }
                 else if (((Erow > Rchoose) && (Ecol > Cchoose)) && (a[Erow + 1][Ecol + 1] == "[ ]"))
                 {
@@ -294,7 +294,7 @@ namespace NewChecker
                     Cchoose = Erow + 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
-                    goto Eathorse0;
+                    goto EathorseO;
                 }
                 else if ((kill == 0)&&(a[Erow][Ecol] == "[ ]"))
                 {

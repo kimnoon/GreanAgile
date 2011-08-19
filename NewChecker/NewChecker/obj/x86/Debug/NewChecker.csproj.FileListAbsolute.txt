@@ -8,3 +8,8 @@ F:\Temp\NewChecker\NewChecker\obj\x86\Debug\NewChecker.pdb
 F:\Temp\NewChecker\NewChecker\bin\Debug\NewChecker.exe
 F:\Temp\NewChecker\NewChecker\bin\Debug\NewChecker.pdb
 F:\Temp\NewChecker\NewChecker\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\work\GreanAgile\NewChecker\NewChecker\obj\x86\Debug\NewChecker.exe
+D:\work\GreanAgile\NewChecker\NewChecker\obj\x86\Debug\NewChecker.pdb
+D:\work\GreanAgile\NewChecker\NewChecker\bin\Debug\NewChecker.exe
+D:\work\GreanAgile\NewChecker\NewChecker\bin\Debug\NewChecker.pdb
+D:\work\GreanAgile\NewChecker\NewChecker\obj\x86\Debug\ResolveAssemblyReference.cache
