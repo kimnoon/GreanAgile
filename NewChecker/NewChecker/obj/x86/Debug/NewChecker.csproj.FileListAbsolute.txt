@@ -1,0 +1,5 @@
+C:\Users\User\Documents\Visual Studio 2010\Projects\NewChecker\NewChecker\bin\Debug\NewChecker.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\NewChecker\NewChecker\bin\Debug\NewChecker.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\NewChecker\NewChecker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\NewChecker\NewChecker\obj\x86\Debug\NewChecker.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\NewChecker\NewChecker\obj\x86\Debug\NewChecker.pdb
