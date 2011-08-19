@@ -43,6 +43,10 @@ namespace NewChecker
             {
                 a[0] = 8;
             }
+            else
+            {
+                Console.WriteLine("input wrong!!");
+            }
 
             if (input[1] == '1')
             {
@@ -75,6 +79,10 @@ namespace NewChecker
             else if (input[1] == '8')
             {
                 a[1] = 8;
+            }
+            else
+            {
+                Console.WriteLine("input wrong!!");
             }
             return a;
         }

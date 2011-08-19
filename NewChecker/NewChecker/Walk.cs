@@ -7,8 +7,26 @@ namespace NewChecker
 {
     class Walk
     {
-        public static void SimpleWalk(string b,string[][] a)
+        public static void SimpleWalk(string[][] a,string player1,string player2)
         {
+            int kill = 0, turn = 0;
+
+ Begin:     if (turn == 0)
+            {
+                Console.WriteLine("player1 " + player1 + " GO!");
+                Console.WriteLine();
+                kill = 0;
+            }
+            else
+            {
+                Console.WriteLine("player2 " + player2 + " GO!");
+                Console.WriteLine();
+                kill = 0;
+            }
+
+            Console.Write("Enter choose : ");
+            string b = Convert.ToString(Console.ReadLine());
+
             #region choose
 
             int[] c = new int[2];
@@ -24,7 +42,9 @@ namespace NewChecker
                 Console.WriteLine();
                 Console.Clear();
                 ShowBroad.ShowBr(a);
+                Console.WriteLine();
                 Console.WriteLine("Intput wrong please try again!!");
+                Console.WriteLine();
             }
 
             #endregion
@@ -33,9 +53,12 @@ namespace NewChecker
 
             if (a[Rchoose][Cchoose] == "[O]")
             {
-            EatO:
-                if ((a[Rchoose - 1][Cchoose + 1] == "[0]" && a[Rchoose - 2][Cchoose + 2] == "[ ]") || (a[Rchoose + 1][Cchoose + 1] == "[0]" && a[Rchoose + 2][Cchoose + 2] == "[ ]"))
+                turn = 1;
+
+            EatO:if ((a[Rchoose - 1][Cchoose + 1] == "[0]" && a[Rchoose - 2][Cchoose + 2] == "[ ]") 
+                    || (a[Rchoose + 1][Cchoose + 1] == "[0]" && a[Rchoose + 2][Cchoose + 2] == "[ ]"))
                 {
+                    kill = 1;
                     int[] e = new int[2];
                     Console.Write("Eat  :");
                     e = Input.ex(Console.ReadLine());
@@ -65,7 +88,7 @@ namespace NewChecker
 
                     goto EatO;
                 }
-                else
+                else if(kill == 0)
                 {
                     int[] g = new int[2];
                     Console.Write("Enter go : ");
@@ -84,10 +107,16 @@ namespace NewChecker
                         Console.WriteLine();
                         Console.Clear();
                         ShowBroad.ShowBr(a);
+                        Console.WriteLine();
                         Console.WriteLine("Intput wrong please try again!!");
+                        Console.WriteLine();
                     }
 
+                    Console.WriteLine();
+                    Console.Clear();
+                    ShowBroad.ShowBr(a);
                 }
+            goto Begin;
             }
 
             #endregion
@@ -96,9 +125,13 @@ namespace NewChecker
 
             else if (a[Rchoose][Cchoose] == "[0]")
             {
-            Eat0:
-                if ((a[Rchoose - 1][Cchoose - 1] == "[O]" && a[Rchoose - 2][Cchoose - 2] == "[ ]") || (a[Rchoose - 1][Cchoose + 1] == "[O]" && a[Rchoose - 2][Cchoose + 2] == "[ ]"))
+                turn = 0;
+
+            Eat0:if ((a[Rchoose - 1][Cchoose - 1] == "[O]" && a[Rchoose - 2][Cchoose - 2] == "[ ]") 
+                    || (a[Rchoose - 1][Cchoose + 1] == "[O]" && a[Rchoose - 2][Cchoose + 2] == "[ ]"))
                 {
+                    kill = 1;
+
                     int[] e = new int[2];
                     Console.Write("Eat  :");
                     e = Input.ex(Console.ReadLine());
@@ -128,7 +161,7 @@ namespace NewChecker
 
                     goto Eat0;
                 }
-                else
+                else if(kill == 0)
                 {
                     int[] g = new int[2];
                     Console.Write("Enter go : ");
@@ -147,25 +180,20 @@ namespace NewChecker
                         Console.WriteLine();
                         Console.Clear();
                         ShowBroad.ShowBr(a);
+                        Console.WriteLine();
                         Console.WriteLine("Intput wrong please try again!!");
+                        Console.WriteLine();
                     }
 
+
+                    Console.WriteLine();
+                    Console.Clear();
+                    ShowBroad.ShowBr(a);
                 }
+            goto Begin;
             }
 
             #endregion
-        }
-
-        public static void turnPlayer(int kill, int turn)
-        {
-            if (turn == 0)
-            {
-                Console.WriteLine("Player O Go!");
-            }
-            else
-            {
-                Console.WriteLine("Player 0 Go!");
-            }
         }
     }
 }

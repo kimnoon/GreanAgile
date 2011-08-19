@@ -3,3 +3,10 @@ C:\Users\User\Documents\Visual Studio 2010\Projects\NewChecker\NewChecker\bin\De
 C:\Users\User\Documents\Visual Studio 2010\Projects\NewChecker\NewChecker\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\User\Documents\Visual Studio 2010\Projects\NewChecker\NewChecker\obj\x86\Debug\NewChecker.exe
 C:\Users\User\Documents\Visual Studio 2010\Projects\NewChecker\NewChecker\obj\x86\Debug\NewChecker.pdb
+F:\Temp\NewChecker\NewChecker\obj\x86\Debug\NewChecker.exe
+F:\Temp\NewChecker\NewChecker\obj\x86\Debug\NewChecker.pdb
+F:\Temp\NewChecker\NewChecker\bin\Debug\NewChecker.exe
+F:\Temp\NewChecker\NewChecker\bin\Debug\NewChecker.pdb
+F:\Temp\NewChecker\NewChecker\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\work\GreanAgile\NewChecker\NewChecker\obj\x86\Debug\NewChecker.exe
+D:\work\GreanAgile\NewChecker\NewChecker\obj\x86\Debug\NewChecker.pdb

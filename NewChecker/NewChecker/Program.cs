@@ -9,7 +9,7 @@ namespace NewChecker
     {
         static void Main(string[] args)
         {
-            /*
+            
             Console.Write("Enter Name Player1 : ");
             string player1 = Convert.ToString(Console.ReadLine());
             Console.WriteLine();
@@ -18,7 +18,7 @@ namespace NewChecker
             Console.WriteLine();
             
             Console.Clear();
-            */
+            
 
             #region Broad input
 
@@ -26,9 +26,9 @@ namespace NewChecker
             a[0] = new string[10] { "   ", " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", "   " };
             a[1] = new string[10] { " A ", "   ", "[O]", "   ", "[O]", "   ", "[O]", "   ", "[O]", " A " };
             a[2] = new string[10] { " B ", "[O]", "   ", "[O]", "   ", "[O]", "   ", "[O]", "   ", " B " };
-            a[3] = new string[10] { " C ", "   ", "[0]", "   ", "[ ]", "   ", "[ ]", "   ", "[ ]", " C " };
+            a[3] = new string[10] { " C ", "   ", "[ ]", "   ", "[ ]", "   ", "[ ]", "   ", "[ ]", " C " };
             a[4] = new string[10] { " D ", "[ ]", "   ", "[ ]", "   ", "[ ]", "   ", "[ ]", "   ", " D " };
-            a[5] = new string[10] { " E ", "   ", "[ ]", "   ", "[0]", "   ", "[ ]", "   ", "[ ]", " E " };
+            a[5] = new string[10] { " E ", "   ", "[ ]", "   ", "[ ]", "   ", "[ ]", "   ", "[ ]", " E " };
             a[6] = new string[10] { " F ", "[ ]", "   ", "[ ]", "   ", "[ ]", "   ", "[ ]", "   ", " F " };
             a[7] = new string[10] { " G ", "   ", "[0]", "   ", "[0]", "   ", "[0]", "   ", "[0]", " G " };
             a[8] = new string[10] { " H ", "[0]", "   ", "[0]", "   ", "[0]", "   ", "[0]", "   ", " H " };
@@ -40,10 +40,8 @@ namespace NewChecker
 
             while (true)
             {
-                Console.Write("Enter choose : ");
-                string b = Convert.ToString(Console.ReadLine());
 
-                Walk.SimpleWalk(b,a);
+                Walk.SimpleWalk(a,player1,player2);
             }
         }
     }
