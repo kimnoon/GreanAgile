@@ -254,8 +254,8 @@ namespace NewChecker
                     a[Rchoose][Cchoose] = "[ ]";
                     a[Erow][Ecol] = "[ ]";
                     a[Erow - 1][Ecol - 1] = "]X[";
-                    Rchoose = Ecol - 1;
-                    Cchoose = Erow - 1;
+                    Rchoose = Erow - 1;
+                    Cchoose = Ecol - 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
                     goto EathorseO;
@@ -266,8 +266,8 @@ namespace NewChecker
                     a[Rchoose][Cchoose] = "[ ]";
                     a[Erow][Ecol] = "[ ]";
                     a[Erow - 1][Ecol + 1] = "]X[";
-                    Rchoose = Ecol - 1;
-                    Cchoose = Erow + 1;
+                    Rchoose = Erow -1;
+                    Cchoose = Ecol + 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
                     goto EathorseO;
@@ -278,8 +278,8 @@ namespace NewChecker
                     a[Rchoose][Cchoose] = "[ ]";
                     a[Erow][Ecol] = "[ ]";
                     a[Erow + 1][Ecol - 1] = "]X[";
-                    Rchoose = Ecol + 1;
-                    Cchoose = Erow - 1;
+                    Rchoose = Erow+1;
+                    Cchoose = Ecol - 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
                     goto EathorseO;
@@ -290,8 +290,8 @@ namespace NewChecker
                     a[Rchoose][Cchoose] = "[ ]";
                     a[Erow][Ecol] = "[ ]";
                     a[Erow + 1][Ecol + 1] = "]X[";
-                    Rchoose = Ecol + 1;
-                    Cchoose = Erow + 1;
+                    Rchoose = Erow + 1;
+                    Cchoose = Ecol + 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
                     goto EathorseO;
@@ -336,8 +336,8 @@ namespace NewChecker
                     a[Rchoose][Cchoose] = "[ ]";
                     a[Erow][Ecol] = "[ ]";
                     a[Erow - 1][Ecol - 1] = "]H[";
-                    Rchoose = Ecol - 1;
-                    Cchoose = Erow - 1;
+                    Rchoose = Erow - 1;
+                    Cchoose = Ecol - 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
                     goto Eathorse0;
@@ -348,8 +348,8 @@ namespace NewChecker
                     a[Rchoose][Cchoose] = "[ ]";
                     a[Erow][Ecol] = "[ ]";
                     a[Erow - 1][Ecol + 1] = "]H[";
-                    Rchoose = Ecol - 1;
-                    Cchoose = Erow + 1;
+                    Rchoose = Erow - 1;
+                    Cchoose = Ecol + 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
                     goto Eathorse0;
@@ -360,8 +360,8 @@ namespace NewChecker
                     a[Rchoose][Cchoose] = "[ ]";
                     a[Erow][Ecol] = "[ ]";
                     a[Erow + 1][Ecol - 1] = "]H[";
-                    Rchoose = Ecol + 1;
-                    Cchoose = Erow - 1;
+                    Rchoose = Erow + 1;
+                    Cchoose = Ecol- 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
                     goto Eathorse0;
@@ -372,8 +372,8 @@ namespace NewChecker
                     a[Rchoose][Cchoose] = "[ ]";
                     a[Erow][Ecol] = "[ ]";
                     a[Erow + 1][Ecol + 1] = "]H[";
-                    Rchoose = Ecol + 1;
-                    Cchoose = Erow + 1;
+                    Rchoose = Erow + 1;
+                    Cchoose = Ecol + 1;
                     Console.Clear();
                     ShowBroad.ShowBr(a);
                     goto Eathorse0;
